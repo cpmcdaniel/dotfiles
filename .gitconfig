@@ -1,10 +1,12 @@
 [user]
 	name = Craig McDaniel
-	email = craig.mcdaniel@datastax.com
+	email = cpmcdaniel@gmail.com
 
 [pull]
         rebase = true
 [core]
 	excludesfile = ~/.gitignore
+	editor = emacs
 [push]
 	default = simple
+
