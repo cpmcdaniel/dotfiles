@@ -131,10 +131,10 @@ values."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(solarized-light
+   dotspacemacs-themes '(spacemacs-dark
+                         solarized-light
                          solarized-dark
                          leuven
-                         spacemacs-dark
                          spacemacs-light
                          monokai
                          zenburn)
@@ -251,7 +251,7 @@ values."
    ;; If non nil show the color guide hint for transient state keys. (default t)
    dotspacemacs-show-transient-state-color-guide t
    ;; If non nil unicode symbols are displayed in the mode line. (default t)
-   dotspacemacs-mode-line-unicode-symbols t
+   dotspacemacs-mode-line-unicode-symbols nil
    ;; If non nil smooth scrolling (native-scrolling) is enabled. Smooth
    ;; scrolling overrides the default behavior of Emacs which recenters point
    ;; when it reaches the top or bottom of the screen. (default t)
@@ -321,6 +321,7 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (global-set-key (kbd "C-+") 'text-scale-increase)
   (global-set-key (kbd "C--") 'text-scale-decrease)
+  (global-git-commit-mode t)
   (add-to-list 'auto-mode-alist '("\\.boot\\'" . clojure-mode))
   (add-to-list 'auto-mode-alist '("\\.cljs.hl\\'" . clojurescript-mode)))
 
