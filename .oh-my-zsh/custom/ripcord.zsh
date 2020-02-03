@@ -11,7 +11,7 @@ alias .grc=".gr clean"
 alias .opsc="cd ${HOME}/ripcord/opscenterd; ./bin/opscenter -f"
 alias .merge="cd ${HOME}/ripcord; ./bin/merge.py"
 alias .afts="cd ${HOME}/ripcord/spock/afts/q ; source ~/.venv/lcm-afts/bin/activate"
-alias .tacb="cd ${HOME}/ripcord; .gr \
+alias .tacb="cd ${HOME}/ripcord; .grr \
       :configbuilder:test :spock:test \
       :configbuilder-cli:shadowJar :configbuilder-cli:test \
-      :dse-server-config-builder:test"
+      :dse-server-config-builder:shadowJar :dse-server-config-builder:test"
